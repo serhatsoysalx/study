@@ -9,9 +9,9 @@ import javax.annotation.PostConstruct;
 import java.util.Date;
 import java.util.UUID;
 
-
 @Component
 public class NotificationSender {
+
     @Autowired
     private NotificationProcuder producer;
 
@@ -35,7 +35,6 @@ public class NotificationSender {
         thread.setName("Notification sender");
         thread.start();
     }
-
 
     @PostConstruct
     public void init() {

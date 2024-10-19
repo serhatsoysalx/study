@@ -20,8 +20,8 @@ public class NotificationProcuder {
     @Value("#{@environment.getProperty('rabbit.exchange.name')}")
     private String exchange;
 
-    public void sendToNotification(Notification notification){
+    public void sendToNotification(Notification notification) {
         System.out.printf("notification send ID : " + notification.getId() + "\n");
-        rabbitTemplate.convertAndSend(exchange, routing,notification);
+        rabbitTemplate.convertAndSend(exchange, routing, notification);
     }
 }

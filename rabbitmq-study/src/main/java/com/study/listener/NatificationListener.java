@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class NatificationListener {
 
     @RabbitListener(queues = "#{@environment.getProperty('rabbit.queue.name')}")
-    public void handleMessage(Notification notification){
+    public void handleMessage(Notification notification) {
         System.out.printf(notification.toString());
     }
 }
