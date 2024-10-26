@@ -21,6 +21,7 @@
         <module>postgreSQL-study</module>
         <module>swagger-study</module>
         <module>rabbitmq-study</module>
+        <module>spring-jwt</module>
     </modules>
 
     <properties>
